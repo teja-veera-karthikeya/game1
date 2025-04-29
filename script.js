@@ -113,17 +113,3 @@ document.addEventListener("mousedown", () => {
 document.getElementById("restart").addEventListener("click", resetGame);
 
 loop();
-
-document.addEventListener('deviceready', () => {
-  if (typeof AdMob !== 'undefined') {
-    AdMob.banner.config({
-      id: 'ca-app-pub-8548359650840679/5405388810', // Replace with your AdMob ID
-      isTesting: false, // Set false before publishing
-      autoShow: false,
-    });
-    AdMob.banner.prepare();
-  }
-});
-
-// Start the game
-startGame();
